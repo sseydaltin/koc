@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (API KEYS!)
+.env
+.env.local
+.env.production
+
+# Android build artifacts
+android/.gradle/
+android/app/build/
+android/build/
+android/.idea/
+android/local.properties
+android/capacitor-cordova-android-plugins/build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Firebase
+.firebase/
+
+# Misc
+*.log
+npm-debug.log*
+
+# Capacitor assets tool
+resources/

@@ -1,0 +1,13 @@
+{
+  "appId": "com.personal.aienglishcoach",
+  "appName": "AI English Coach",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
