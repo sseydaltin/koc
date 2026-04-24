@@ -19,8 +19,7 @@ function AppContent() {
     )
   }
 
-  // Authentication is bypassed – dummy user is preset above
-  // if (!state.user) return <LoginScreen />
+  if (!state.user) return <LoginScreen />
 
   return (
     <div className="max-w-md mx-auto min-h-screen relative">
