@@ -16,6 +16,8 @@ android/build/
 android/.idea/
 android/local.properties
 android/capacitor-cordova-android-plugins/build/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
 
 # IDE
 .idea/
@@ -36,9 +38,3 @@ npm-debug.log*
 
 # Capacitor assets tool
 resources/
-
-# Agent/Tool folders
-.agents/
-.claude/
-.trae/
-.gemini/

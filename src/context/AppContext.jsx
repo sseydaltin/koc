@@ -5,7 +5,7 @@ const AppContext = createContext(null);
 
 const initialState = {
   // Dummy signed‑in user (you can change the email here)
-  user: { uid: 'dummy-uid', email: 'sseydaltin@gmail.com' },
+  user: { uid: 'dummy-uid', email: 'user@example.com' },
   loading: false,
   activeTab: 'home',
   currentVideo: null,
