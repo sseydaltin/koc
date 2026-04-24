@@ -139,29 +139,37 @@ koc/
 
 ---
 
-## 🔧 Configuration
+## 🔧 Configuration & Customization
 
-### Changing the user
+### ⚠️ Security Note
+This project uses `.env` files to store sensitive API keys. **Never commit your `.env` file to a public repository.** A `.env.example` file is provided to show the required variables.
 
-Edit `src/context/AppContext.jsx`:
+### Changing the User (Auto-Login)
+To simplify personal use and bypass the Firebase Google Auth popup on mobile, the app is currently configured with a "Dummy User". 
+
+To customize this, edit `src/context/AppContext.jsx`:
 
 ```js
 const initialState = {
-  user: { uid: 'your-uid', email: 'your@email.com' },
-  // ...
-}
+  // Replace with your info
+  user: { uid: 'your-unique-id', email: 'your-email@example.com' },
+  loading: false,
+  activeTab: 'home',
+  currentVideo: null,
+};
 ```
 
-### Adding more videos
+If you prefer to use real Firebase Authentication, uncomment the login logic in `src/App.jsx` and `src/context/AppContext.jsx`.
 
-Edit `src/data/videos.json` — add entries with:
+### Adding More Videos
+The Video Club library is managed via `src/data/videos.json`. You can add new educational content by adding a new object to the array:
 
 ```json
 {
-  "id": "youtube_video_id",
-  "title": "Video Title",
-  "level": "B1",
-  "summary": "Detailed summary for the AI coach to reference..."
+  "id": "YOUTUBE_ID",
+  "title": "Clear Title",
+  "level": "A2/B1",
+  "summary": "Detailed summary for the AI coach context..."
 }
 ```
 

@@ -36,3 +36,9 @@ npm-debug.log*
 
 # Capacitor assets tool
 resources/
+
+# Agent/Tool folders
+.agents/
+.claude/
+.trae/
+.gemini/
